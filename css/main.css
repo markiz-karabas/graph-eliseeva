@@ -1,0 +1,48 @@
+@import url(./reset.css);
+/*---HEADER---*/
+body {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+}
+.header {
+    background-color: rgb(80, 68, 68);
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+.logo-box {
+    height: 50px;
+    width: auto;
+
+}
+.header-logo {
+    height: 100%;
+    width: auto;
+}
+.header-menu {
+}
+.header-menu__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.header-menu__item {
+    padding: 5px 14px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.header-menu__link {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

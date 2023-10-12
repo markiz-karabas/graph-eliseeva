@@ -1,17 +1,25 @@
 @import url(./reset.css);
 /*---HEADER---*/
 body {
-    background-color: rgb(63, 56, 56);
+    /*background-color: rgb(63, 56, 56);*/
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
+    background-color: rgb(38, 34, 34);
+    /*background-image: url(../accets/img/DSCF6810.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;*/
+    
+
 }
 .header {
-    background-color: rgb(63, 56, 56);
+    /*background-color: rgb(63, 56, 56);*/
+
 }
 .container {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 a {
     color: #fff;
@@ -22,10 +30,13 @@ a {
     padding: 30px 0;
     align-items: center;
 
+
 }
 .logo-box {
     height: 50px;
     width: auto;
+    position: relative;
+    z-index: 12;
 
 }
 .header-logo {
@@ -52,26 +63,48 @@ a {
     letter-spacing: 2px;
 }
 .hero {
-    background-color: rgb(63, 56, 56);
+    /*background-color: rgb(63, 56, 56);*/
+
+
+}
+.hero::before {
+    content: "";
+    position: absolute;
+width: 896px;
+height: 840px;
+flex-shrink: 0;
+    border-radius: 896px;
+    background: radial-gradient(50% 50.00% at 50% 50.00%, #116B60 0%, rgba(14, 155, 139, 0) 100%);
+
+    top: -120px;
+    left: -188px;
 }
 .hero__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 40px 0 20px;
+    
 }
 .title-box {
-    
+    position: relative;
+    z-index: 10;
 }
 .title-img-box {
     margin-bottom: 20px;
     width: 80%;
+    
+}
+.title-name-img {
+    width: 100%;
 }
 .title-img {
 }
 .title-text {
+
     color: #fff;
     font-size: 28px;
     font-weight: 400;
+
 }
 .span-name {
     font-size: 48px;
@@ -79,18 +112,28 @@ a {
     color: rgb(110, 134, 130);
 }
 .order-btn {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 10px 36px;
-    background-color: rgb(110, 134, 130);
+    /*background-color: rgb(110, 134, 130);*/
     border-radius: 20px;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 400;
+    background: rgba(217, 217, 217, 0.26);
+    backdrop-filter: blur(2.5px);
+    color: #fff;
+    letter-spacing: 1.2px;
 }
 .button {
 }
 .social-links-box {
+    margin: 0 auto;
+    width: 379px;
+    margin-bottom: 40px;
 }
 .social-links__list {
+
+    display: flex;
+    justify-content: space-between;
 }
 .social-links__item {
 }

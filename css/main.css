@@ -172,6 +172,7 @@ flex-shrink: 0;
 }
 
 .about-title {
+    
     margin-bottom: 20px;
 }
 .about-text {
@@ -212,6 +213,7 @@ flex-shrink: 0;
 }
 .portfolio__title,
 .contacts__title {
+
     color: #fff;
     font-size: 48px;
     font-weight: 700;
@@ -229,12 +231,36 @@ flex-shrink: 0;
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 30px;
-    background: rgba(139, 139, 139, 0.40);
+    background: rgba(65, 78, 75, 0.531);
     backdrop-filter: blur(22.5px);
 }
 .album-item {
     border-radius: 20px;
     margin: 10px;
+}
+.album-logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.album-logo__item {
+    width: 23%;
+    height: 260px;
+    border-radius: 20px;
+}
+.album-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.promo-1-img {
+    width: 300px;
+    height: auto;
+}
+.promo-2-img {
+    width: auto;
+    height: 400px;
 }
 .contacts__wrapper {
     padding: 60px 0;

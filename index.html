@@ -7,6 +7,8 @@
     <title>Графический дизайн и Иллюстрация</title>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -36,7 +38,7 @@
     </header>
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="container-right">
                 <div class="hero__wrapper">
                     <div class="title-box">
                         <div class="title-img-box">
@@ -48,44 +50,74 @@
                         </div>
                         <button class="order-btn button">Заказать дизайн</button>
                     </div>
-                   
-                </div>
-                <div class="social-links-box">
-                    <ul class="social-links__list">
-                        <li class="social-links__item">
-                            <a class="social-links__link" href="">
-                                <img class="inst-icon" src="./accets/icons/Instagram.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social-links__item">
-                            <a class="social-links__link" href="">
-                                <img class="telegram-icon" src="./accets/icons/Telegram App.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social-links__item">
-                            <a class="social-links__link" href="">
-                                <img class="inst-icon" src="./accets/icons/VK.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social-links__item">
-                            <a class="social-links__link" href="">
-                                <img class="vk-icon" src="./accets/icons/Behance.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social-links__item">
-                            <a class="social-links__link" href="">
-                                <img class="behance-icon" src="./accets/icons/LinkedIn.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social-links__item">
-                            <a class="social-links__link" href="">
-                                <img class="in-icon" src="" alt="">
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="hero-slider">
+                            <div class="owl-carousel">
+                                <img class="hero-slider__item" src="./accets/исходники/illustration-1.JPG" alt="hero-slide">
+                                <img class="hero-slider__item hero-slider__item--active" src="./accets/исходники/illustration-2.JPG" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/illustration-3.JPG" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/illustration-4.JPG" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/illustration-12.JPG" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/illustration-6.JPG" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/illustration-7.JPG" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/illustration-8.JPG" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/illustration-9.JPG" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/illustration-10.jpg" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/illustration-13.jpg" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/logo-1.jpg" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/logo-2.jpg" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/logo-3.jpg" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/logo-4.jpg" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/logo-5.jpg" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/logo-6.jpg" alt="hero-slide">
+                                <img class="hero-slider__item" src="./accets/исходники/logo-8.jpg" alt="hero-slide">
+                            </div>
+                            <button class="hero-slider__btn hero-slider__btn--prev">
+                                <img class="hero-slider__btn-svg" src="./accets/icons/arrow-prev.svg" alt="arrow-prev">
+                            </button>
+                            <button class="hero-slider__btn hero-slider__btn--next">
+                                <img class="hero-slider__btn-svg" src="./accets/icons/arrow-next.svg" alt="arrow-next">
+                            </button>
+                    </div>
                 </div>
             </div>
+            <div class="conainer">
+
+            </div>
         </section>
+        <div class="social-links-box">
+            <ul class="social-links__list">
+                <li class="social-links__item">
+                    <a class="social-links__link" href="https://instagram.com/kbke2612" target="_blank">
+                        <img class="inst-icon" src="./accets/icons/Instagram.png" alt="inst-icon">
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="https://t.me/designer2612" target="_blank">
+                        <img class="telegram-icon" src="./accets/icons/Telegram App.png" alt="telegram-icon">
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="https://vk.com/kbke2612" target="_blank">
+                        <img class="vk-icon" src="./accets/icons/VK.png" alt="vk-icon">
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="https://www.behance.net/margarieliseev1" target="_blank">
+                        <img class="behance-icon" src="./accets/icons/Behance.png" alt="behance-icon">
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="">
+                        <img class="linkedin-icon" src="./accets/icons/LinkedIn.png" alt="linkedin-icon">
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="">
+                        <img class="in-icon" src="" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
         <section class="about">
             <div class="container">
                 <div class="line"></div>
@@ -346,5 +378,8 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

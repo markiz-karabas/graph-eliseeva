@@ -63,7 +63,7 @@ a {
 }
 .header-menu__item:hover {
     background: linear-gradient(172deg, #768c93 0%, #073333 100%);
-    border: none ;
+    border: 1px solid #073333;
 }
 
 .header-menu__link {
@@ -139,6 +139,7 @@ a {
 }
 .order-btn:hover {
     background: linear-gradient(172deg, #768c93 0%, #073333 100%);
+    border: 1px solid #073333;
 }
 
 
@@ -151,7 +152,7 @@ a {
     position: relative;
 }
 .hero-slider__item {
-    margin-top: 10px; /*выровнять неактивные по вертикали*/
+    margin-top: 12px; /*выровнять неактивные по вертикали*/
     width: 320px;
     height: 320px;
     flex-shrink: 0;
@@ -220,13 +221,14 @@ a {
 }
 .in-icon {
 }
-.line {
+/*.line {
     width: 60%;
     height: 1px;
     background-color: #fff;
     margin: 0 auto;
-}
+}*/
 .about {
+   
 }
 .container {
 }
@@ -236,7 +238,18 @@ a {
     padding: 60px 0;
     font-family: sans-serif;
     font-weight: normal;
-    color: #fff;
+    color: rgb(26, 22, 22);
+}
+.about-img {
+    width: 45%;
+    
+}
+.about-img img {
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
 }
 .about-content {
     width: 50%;
@@ -247,11 +260,13 @@ a {
     margin-bottom: 20px;
 }
 .about-text {
-    font-size: 18px;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     line-height: 1.5;
+    font-weight: lighter;
+    color: #edeff0;
 }
 .service__wrapper {
     padding: 60px 0;
@@ -301,7 +316,7 @@ a {
     margin: 20px 0;
     text-align: center;
 }
-.portfolio-album {
+.portfolio__box {
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 30px;
@@ -312,22 +327,94 @@ a {
     border-radius: 20px;
     margin: 10px;
 }
-.album-logo {
+.album {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.album-logo__item {
+.album__item {
     width: 23%;
     height: 260px;
     border-radius: 20px;
+    overflow: hidden;
 }
-.album-img {
+.album__img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.album__img:hover {
+    transform: scale(1.1);
+}
+/*slider-gallery*/
+.slider-gallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.slider-gallery__box{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 90vw;
+    height: 90vh;
+}
+.slider-gallery__btn {
+
+    display: block;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    background: linear-gradient(172deg, #4b666f 0%, #403c3c 100%);
 }
 
+.slider-gallery__btn--prev {
+    position: absolute;
+    top: 50%;
+    left: -27px;
+    transform: translateY(-30%);
+
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+.slider-gallery__btn--next {
+    position: absolute;
+    top: 50%;
+    right: -27px;
+    transform: translateY(-30%);
+
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+.icon-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 58px;
+    height: 58px;
+    z-index: 10;
+}
+.icon-close__img {
+    width: 100%;
+}
 .promo-1-img {
     width: 300px;
     height: auto;

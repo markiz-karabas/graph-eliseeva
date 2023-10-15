@@ -1,4 +1,7 @@
 @import url(./reset.css);
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --container-width: 1240px;
     --container-padding: 20px;
@@ -10,6 +13,7 @@ body {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     background-color: rgb(38, 34, 34);
+    
     /*background-image: url(../accets/img/DSCF6810.jpg);
     background-size:contain;
     background-repeat: no-repeat;*/
@@ -29,7 +33,7 @@ a {
 ul, ul li {
     list-style: none;
 }
-/*---HEADER---*/
+/*SECTION-HEADER*/
 .header {
     /*background-color: rgb(63, 56, 56);*/
 }
@@ -78,12 +82,28 @@ ul, ul li {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+@media(max-width: 800px){
+    .logo-box {
+        height: 40px;
+        width: auto;
+    }
+    .header-menu__list {
+        gap: 12px; 
+    }
+    .header-menu__link {
+        font-size: 14px;
+
+    }
+}
+
+
+/*SECTION-HERO*/
 .hero {
     /*background-color: rgb(63, 56, 56);*/
 
 
 }
-.hero::before {
+/*.hero::before {
     content: "";
     position: absolute;
     width: 896px;
@@ -94,7 +114,7 @@ ul, ul li {
 
     top: -120px;
     left: -188px;
-}
+}*/
 .hero__wrapper {
     display: flex;
     padding: 40px 0 20px;
@@ -202,11 +222,24 @@ ul, ul li {
     padding-right: 20px;
     justify-content: flex-end;
 }
-@media(max-width: 1280px){
+@media(max-width: 1280px) {
+    .hero__wrapper {
+        padding: 20px;
+    }
+    .title-box {
+        width: 30%;
+        margin-right: -30px;
+    }
+    .title-name {
+        width: 80%;
+    }
+ 
+ 
+}
+@media(max-width: 800px){
     .hero__wrapper {
         flex-direction: column;
         padding: 40px 20px 20px;
-        margin-bottom: 40px;
     }
     .title-box {
         margin-bottom: 40px;
@@ -274,6 +307,13 @@ ul, ul li {
     background-color: #fff;
     margin: 0 auto;
 }*/
+@media (max-width: 800px) {   
+    .social-links-box{
+        margin-bottom: 60px;
+    }
+}
+
+
 .about {
    
 }
@@ -317,7 +357,7 @@ ul, ul li {
 }
 @media(max-width: 1280px){
     .about__wrapper {
-        padding-top: 0;
+        padding: 0;
         flex-direction: column;
     }
     .about-img {
@@ -328,6 +368,16 @@ ul, ul li {
         width: 100%;
     }
 }
+@media(max-width: 800px) {
+    .about-content{
+        margin-top: 20px;
+    }
+    .about-text {
+        font-size: 18px;
+    }
+}
+
+/*SECTION-SERVICE*/
 .service__wrapper {
     padding: 60px 0;
 }
@@ -336,7 +386,6 @@ ul, ul li {
     font-size: 28px;
     font-weight: 400;
     margin-bottom: 20px;
-
 }
 .service-cards {
     display: flex;
@@ -393,17 +442,20 @@ ul, ul li {
 }
 @media(max-width: 1280px){
     .service-cards {
-        flex-direction: column;
-        gap: 20px;
-        width: 70%;
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
     }
     .service-cards__item {
         width: 100%;
-        
-
     }
 }
+@media(max-width: 900px){
+    .service-cards {
+        gap: 20px;
+    }
+}
+/*SECTION-PORTFOLIO*/
 .portfolio__title,
 .contacts__title {
 
@@ -424,11 +476,11 @@ ul, ul li {
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 30px;
-    background: rgba(65, 78, 75, 0.531);
-    backdrop-filter: blur(22.5px);
+    /*background: rgba(65, 78, 75, 0.531);
+    backdrop-filter: blur(22.5px);*/
 }
 .album-item {
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px;
 }
 .album {
@@ -439,7 +491,7 @@ ul, ul li {
 .album__item {
     width: 23%;
     height: 260px;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
 }
 .album__img {
@@ -512,21 +564,45 @@ ul, ul li {
     position: absolute;
     top: 30px;
     right: 30px;
-    width: 58px;
-    height: 58px;
+    width: 65px;
+    height: 65px;
+    padding: 10px;
     z-index: 10;
+    background-color: rgba(0, 0, 0, 0.302);
+    border-radius: 50%;
 }
 .icon-close__img {
-    width: 100%;
+    width: 80%;
 }
-.promo-1-img {
-    width: 300px;
-    height: auto;
+
+.album-design-vk {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
 }
-.promo-2-img {
-    width: auto;
-    height: 400px;
+.portfolio__link {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgb(185, 175, 175);
+    border-radius: 10px;
 }
+@media (max-width: 1280px) {
+    .portfolio__box {
+        margin: 0;
+    }
+    .album {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+    }
+    .album__item {
+        width: auto;
+        height: auto;
+        
+    }
+}
+/*SECTION-CONTACTS*/
 .contacts__wrapper {
     padding: 60px 0;
 }
@@ -534,6 +610,7 @@ ul, ul li {
     display: flex;
     justify-content: space-between;
     color: #fff;
+    margin-top: 40px;
 }
 .contacts-form {
 }
@@ -544,17 +621,19 @@ ul, ul li {
 }
 .contacts__text {
     font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     margin-bottom: 10px;
     line-height: 1.5;
     margin-bottom: 30px;
+    font-weight: lighter;
 }
 .contacts__list {
     text-align: right;
     margin-bottom: 40px;
 }
 .contacts__list-item {
+    margin-bottom: 10px;
 }
 .contacts__link {
 }
@@ -590,8 +669,8 @@ input {
     background-color: rgb(185, 175, 175);
     color: black;
     font-family: sans-serif;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
     padding: 10px;
     width: 400px;
     
@@ -614,17 +693,45 @@ input {
     outline: none;
 }
 .submit-btn {
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px 20px;
-    background-color: rgb(95, 114, 107);
+    background-color: #383838;
+    border: 2px solid rgb(185, 175, 175);
     border-radius: 10px;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
 }
+.submit-btn:hover {
+    background: linear-gradient(172deg, #768c93 0%, #073333 100%);
+    border: 1px solid #073333;
+}
 .contacts-content {
 
     
+}
+.footer__wrapper{
+    border-top: 1px solid #fff;
+    padding: 20px 0;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.developer-info {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.footer__git {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
 }
 @media(max-width: 1280px){
     .contacts-content {

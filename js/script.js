@@ -45,7 +45,6 @@ function chengeImg(dir) {
   imgFullSize.replaceWith(newImg);
   imgFullSize = newImg;
   imgFullSize.style.pointerEvents = "none";
-
 }
 //eventlisteners
 albumItems.forEach(item => {
@@ -76,3 +75,4 @@ albumBtnClose.addEventListener('click', event => {
   imgFullSize.remove();
   newImg.remove();
 });
+//BURGER-MENU

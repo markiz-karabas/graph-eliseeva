@@ -14,6 +14,7 @@ $('.hero-slider__btn--prev').click(function() {
 $('.hero-slider__btn--next').click(function() {
   owl.trigger('next.owl.carousel');
 });
+
 //PORTFOLIO-GALLERY
 const albumItems = Array.from(document.querySelectorAll('.album__item')),
       albumImgs = Array.from(document.querySelectorAll('.album__img')),
@@ -58,21 +59,26 @@ albumItems.forEach(item => {
     albumSlider.classList.add('active');
   })
 });
+
 albumBtnPrev.addEventListener('click', event => {
   event.preventDefault();
   chengeImg('prev');
 });
+
 albumBtnNext.addEventListener('click', event => {
   event.preventDefault();
   chengeImg('next');
 });
+
 albumBtnClose.addEventListener('click', event => {
   event.preventDefault();
 });
+
 albumBtnClose.addEventListener('click', event => {
   event.preventDefault();
   albumSlider.classList.remove('active');
   imgFullSize.remove();
   newImg.remove();
 });
+
 //BURGER-MENU

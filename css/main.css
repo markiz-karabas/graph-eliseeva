@@ -30,6 +30,10 @@ a {
 ul, ul li {
     list-style: none;
 }
+body.--lock {
+    overflow: hidden;
+    overflow-x: hidden;
+}
 
 /*HEADER*/
 .header {

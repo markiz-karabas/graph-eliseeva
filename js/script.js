@@ -82,3 +82,23 @@ albumBtnClose.addEventListener('click', event => {
 });
 
 //BURGER-MENU
+const burgerIcon = document.querySelector('.burger-icon'),
+      burgerMenu = document.querySelector('.header-menu__list');
+
+if(burgerIcon) {
+    burgerIcon.addEventListener('click', function(event) {
+      burgerIcon.classList.toggle('--active');
+      burgerMenu.classList.toggle('--active');
+      document.body.classList.toggle('--lock');
+})
+}
+//скрыть меню при клике по ссылке
+const menuLinks = burgerMenu.querySelectorAll('a');
+
+menuLinks.forEach(el => {
+el.addEventListener('click', () => {
+    document.body.classList.remove('--lock');
+    burgerIcon.classList.remove('--active');
+    burgerMenu.classList.remove('--active');
+});
+});

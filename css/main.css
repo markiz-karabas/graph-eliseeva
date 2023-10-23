@@ -335,6 +335,10 @@ body.--lock {
     .hero-slider__btn--next {
         width: 100%;
     }
+    .order-btn {
+        background: linear-gradient(172deg, #768c93 0%, #073333 100%);
+        border: 1px solid #073333;
+    }
 }
 @media(max-width: 560px){
     .title-box {
@@ -346,10 +350,6 @@ body.--lock {
     .order-btn {
         display: block;
         margin: 40px auto 0;
-    }
-    .order-btn {
-        background: linear-gradient(172deg, #768c93 0%, #073333 100%);
-        border: 1px solid #073333;
     }
 }
 
@@ -658,6 +658,7 @@ body.--lock {
 .album-design-vk {
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
     gap: 20px; 
 }
 .portfolio__link {
